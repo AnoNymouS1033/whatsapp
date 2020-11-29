@@ -10,7 +10,7 @@ const Asena = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
   
 Asena.addCommand({pattern: 'meme ?(.*)', fromMe: true}, (async (message, match) => {    
-    if (message.reply_message === false) return await message.sendMessage('*Bir fotoğraf veya videoya yanıt verin!*');
+    if (message.reply_message === false) return await message.sendMessage('Reply to the photo or video');
     var topText, bottomText;
 
     if (match[1].includes(';')) {
